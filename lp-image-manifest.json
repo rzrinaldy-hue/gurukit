@@ -1,0 +1,121 @@
+{
+  "assets": [
+    {
+      "name": "hero",
+      "filename": "hero.jpg",
+      "keyword": "female teacher laptop desk classroom Indonesia natural light",
+      "orientation": "landscape",
+      "min_width": 1200,
+      "min_height": 630,
+      "used_in": "Section 1 — Hero (og:image + hero visual)",
+      "alt_text": "Guru perempuan di meja kerja dengan laptop terbuka, suasana siang hari tenang — menggambarkan kemudahan kerja administratif",
+      "cdn_url": "https://images.pexels.com/photos/37809800/pexels-photo-37809800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "jessica olivella",
+      "pexels_url": "https://www.pexels.com/photo/focused-female-teacher-working-in-buenos-aires-classroom-37809800/"
+    },
+    {
+      "name": "testi-1",
+      "filename": "testi-1.jpg",
+      "keyword": "Indonesian woman teacher smiling office warm",
+      "orientation": "portrait",
+      "min_width": 400,
+      "min_height": 500,
+      "used_in": "Section 2 — Testimonial carousel (optional avatar placeholder)",
+      "alt_text": "Foto guru perempuan Indonesia tersenyum — pengguna GuruKit AI",
+      "cdn_url": "https://images.pexels.com/photos/6981004/pexels-photo-6981004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "Mikhail Nilov",
+      "pexels_url": "https://www.pexels.com/photo/a-happy-woman-in-a-black-blazer-and-eyeglasses-6981004/"
+    },
+    {
+      "name": "testi-2",
+      "filename": "testi-2.jpg",
+      "keyword": "Indonesian teacher classroom documents desk",
+      "orientation": "portrait",
+      "min_width": 400,
+      "min_height": 500,
+      "used_in": "Section 2 — Testimonial carousel (optional avatar placeholder)",
+      "alt_text": "Foto guru di meja kerja dengan dokumen — pengguna GuruKit AI",
+      "cdn_url": "https://images.pexels.com/photos/7012266/pexels-photo-7012266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "cottonbro studio",
+      "pexels_url": "https://www.pexels.com/photo/woman-sitting-by-table-and-working-7012266/"
+    },
+    {
+      "name": "testi-3",
+      "filename": "testi-3.jpg",
+      "keyword": "young female teacher laptop happy warm light",
+      "orientation": "portrait",
+      "min_width": 400,
+      "min_height": 500,
+      "used_in": "Section 2 — Testimonial carousel (optional avatar placeholder)",
+      "alt_text": "Foto guru muda perempuan dengan laptop tersenyum — pengguna GuruKit AI",
+      "cdn_url": "https://images.pexels.com/photos/5186399/pexels-photo-5186399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "Nataliya Vaitkevich",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-in-eyeglasses-carrying-a-laptop-5186399/"
+    },
+    {
+      "name": "pain-bg",
+      "filename": "pain-bg.jpg",
+      "keyword": "tired teacher night desk documents stress Indonesia",
+      "orientation": "landscape",
+      "min_width": 800,
+      "min_height": 500,
+      "used_in": "Section 3 — Pain validation (optional section background)",
+      "alt_text": "Guru kelelahan di meja kerja malam hari dengan tumpukan dokumen — menggambarkan situasi lembur",
+      "cdn_url": "https://images.pexels.com/photos/9063392/pexels-photo-9063392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "cottonbro studio",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-sitting-at-the-table-9063392/"
+    },
+    {
+      "name": "transformation",
+      "filename": "transformation.jpg",
+      "keyword": "female teacher relaxed desk afternoon sunlight laptop closed Indonesia",
+      "orientation": "landscape",
+      "min_width": 900,
+      "min_height": 600,
+      "used_in": "Section 8 — Transformation / Bayangin",
+      "alt_text": "Guru perempuan tersenyum lega di meja kerja dengan laptop tertutup, suasana sore hari — menggambarkan selesainya pekerjaan administrasi lebih awal",
+      "cdn_url": "https://images.pexels.com/photos/37826257/pexels-photo-37826257.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "Alex Dos Santos",
+      "pexels_url": "https://www.pexels.com/photo/university-student-studying-in-sunlit-classroom-37826257/"
+    },
+    {
+      "name": "cta-bg",
+      "filename": "cta-bg.jpg",
+      "keyword": "classroom warm light morning Indonesia education hopeful",
+      "orientation": "landscape",
+      "min_width": 1200,
+      "min_height": 630,
+      "used_in": "Section 10 — Pricing (subtle background texture)",
+      "alt_text": "Ruang kelas Indonesia dengan cahaya hangat pagi hari — suasana penuh harapan",
+      "cdn_url": "https://images.pexels.com/photos/31940733/pexels-photo-31940733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "Haidar Azmi",
+      "pexels_url": "https://www.pexels.com/photo/indonesian-students-in-classroom-exam-setting-31940733/"
+    },
+    {
+      "name": "mockup-pdf",
+      "filename": "mockup-pdf.jpg",
+      "keyword": "PDF document laptop screen mockup warm angle education",
+      "orientation": "landscape",
+      "min_width": 800,
+      "min_height": 500,
+      "used_in": "Section 6 — Core deliverables (optional prompt pack mockup)",
+      "alt_text": "Mockup layar laptop menampilkan PDF GuruKit AI Prompt Pack — tampak sudut sedikit miring dengan bayangan ringan",
+      "cdn_url": "https://images.pexels.com/photos/16139628/pexels-photo-16139628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "Jakub Zerdzicki",
+      "pexels_url": "https://www.pexels.com/photo/computer-with-financial-calculator-16139628/"
+    },
+    {
+      "name": "footer-pattern",
+      "filename": "footer-pattern.jpg",
+      "keyword": "subtle warm paper texture cream educational background",
+      "orientation": "landscape",
+      "min_width": 600,
+      "min_height": 200,
+      "used_in": "Section 14 — Footer (subtle background pattern, optional)",
+      "alt_text": "Tekstur kertas hangat halus untuk latar belakang footer",
+      "cdn_url": "https://images.pexels.com/photos/28380285/pexels-photo-28380285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "photographer": "Beyzanur K.",
+      "pexels_url": "https://www.pexels.com/photo/a-pile-of-paper-with-crumpled-sheets-of-paper-28380285/"
+    }
+  ]
+}
