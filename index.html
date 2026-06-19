@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>GuruKit AI — RPP & Soal Selesai 15 Menit, Tanpa Lembur</title>
+  <meta name="description" content="100+ prompt Bahasa Indonesia siap pakai, format Kurikulum Merdeka. Buat RPP, soal, laporan siswa dalam 15 menit pakai ChatGPT gratis. Beli sekali Rp 99k, akses selamanya.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gurukit.ai/">
+  <meta property="og:title" content="GuruKit AI — RPP & Soal Selesai 15 Menit, Tanpa Lembur">
+  <meta property="og:description" content="100+ prompt Kurikulum Merdeka siap pakai. Buat RPP, soal, laporan siswa dalam 15 menit pakai ChatGPT gratis. Rp 99k sekali bayar, akses selamanya.">
+  <meta property="og:image" content="https://images.pexels.com/photos/37809800/pexels-photo-37809800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Guru perempuan di meja kerja dengan laptop terbuka, suasana siang hari tenang, teks 15 Menit">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="GuruKit AI">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://gurukit.ai/">
+  <meta name="twitter:title" content="GuruKit AI — RPP & Soal Selesai 15 Menit, Tanpa Lembur">
+  <meta name="twitter:description" content="100+ prompt Kurikulum Merdeka siap pakai. Buat RPP, soal, laporan siswa dalam 15 menit pakai ChatGPT gratis. Rp 99k sekali bayar.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/37809800/pexels-photo-37809800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+  <meta name="twitter:image:alt" content="GuruKit AI — cover produk prompt pack untuk guru Indonesia">
+
+  <!-- JSON-LD Product Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "GuruKit AI — Prompt Pack Kurikulum Merdeka",
+    "description": "Bundle 100+ prompt Bahasa Indonesia terstruktur untuk guru SD–SMA. Cover 5 dokumen utama: RPP/Modul Ajar, bank soal, materi ajar, laporan capaian siswa, media pembelajaran. Format Kurikulum Merdeka. Beli sekali, akses selamanya.",
+    "image": "https://images.pexels.com/photos/37809800/pexels-photo-37809800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "brand": {
+      "@type": "Brand",
+      "name": "GuruKit AI"
+    },
+    "sku": "gurukit-ai",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://gurukit.ai/#pricing",
+      "priceCurrency": "IDR",
+      "price": "99000",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31",
+      "seller": {
+        "@type": "Organization",
+        "name": "GuruKit AI"
+      }
+    }
+  }
+  </script>
+
+  <style>
+/* ============================================
+   GURUKIT AI — Landing Page Stylesheet v1
+   BVI palette, mobile-first, Plus Jakarta Sans
+   ============================================ */
+
+/* ============================================
+   0. CSS CUSTOM PROPERTIES (BVI PALETTE)
+   ============================================ */
+:root {
+  /* Color system */
+  --bg-primary:     #FAFAF7;
+  --bg-secondary:   #F0EBE1;
+  --bg-dark:        #1A7F6E;
+
+  --color-primary:      #1A7F6E;
+  --color-primary-dark: #0F5C50;
+  --color-primary-bright: #1F9680;
+  --color-on-primary:   #FFFFFF;
+
+  --color-accent:       #C4593A;
+  --color-accent-dark:  #A84530;
+
+  --color-amber:        #D4860B;
+  --color-amber-bg:     rgba(212, 134, 11, 0.12);
+  --color-amber-border: rgba(212, 134, 11, 0.30);
+
+  --color-sage:         #5A7F6A;
+
+  --text-primary:   #1C1C1A;
+  --text-secondary: #4A4845;
+  --text-muted:     #8A8480;
+  --text-on-dark:   #FFFFFF;
+
+  --border-color:   rgba(28, 28, 26, 0.10);
+  --shadow-card:    0 4px 16px rgba(28, 28, 26, 0.08);
+  --shadow-cta:     0 4px 20px rgba(26, 127, 110, 0.35);
+  --shadow-cta-hover: 0 6px 28px rgba(26, 127, 110, 0.50);
+
+  /* Typography */
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Layout */
+  --container-max:       720px;
+  --container-max-wide:  1100px;
+  --section-pad-v:       56px;
+  --section-pad-h:       20px;
+  --radius-card:         14px;
+  --radius-cta:          999px;
+  --radius-badge:        8px;
+}
+
+
+/* ============================================
+   1. RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 80px; /* sticky CTA space */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* Screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+/* ============================================
+   2. CONTAINER
+   ============================================ */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-h);
+}
+
+.container--wide {
+  max-width: var(--container-max-wide);
+}
+
+
+/* ============================================
+   3. SECTION COMMON
+   ============================================ */
+section {
+  padding: var(--section-pad-v) 0;
+}
+
+/* Alternating section backgrounds */
+.hero          { background: var(--bg-primary); }
+.testi-carousel{ background: var(--bg-secondary); }
+.pain          { background: var(--bg-primary); }
+.reframe       { background: var(--bg-secondary); }
+.package-intro { background: var(--bg-primary); }
+.deliverables  { background: var(--bg-secondary); }
+.bonus         { background: var(--bg-primary); }
+.transformation{ background: var(--bg-secondary); }
+.why-now       { background: var(--bg-primary); }
+.pricing       { background: var(--bg-dark); }
+.faq-wrap      { background: var(--bg-primary); }
+.form          { background: var(--bg-secondary); }
+
+.section-heading {
+  font-size: clamp(22px, 6vw, 28px);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+.section-heading--center { text-align: center; }
+.section-heading--light  { color: var(--text-on-dark); }
+
+
+/* ============================================
+   4. BADGES & CHIPS
+   ============================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-badge);
+}
+
+.badge--teal {
+  background: rgba(26, 127, 110, 0.10);
+  color: var(--color-primary-dark);
+  border: 1px solid rgba(26, 127, 110, 0.25);
+}
+
+.proof-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+.proof-chip strong {
+  color: var(--text-primary);
+}
+
+
+/* ============================================
+   5. CTA BUTTONS
+   ============================================ */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border-radius: var(--radius-cta);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  min-height: 52px;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+.cta--primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-on-primary);
+  box-shadow: var(--shadow-cta);
+}
+
+.cta--primary:hover,
+.cta--primary:focus-visible {
+  background: linear-gradient(135deg, var(--color-primary-bright) 0%, var(--color-primary) 100%);
+  box-shadow: var(--shadow-cta-hover);
+  transform: translateY(-1px);
+}
+
+.cta--primary:active {
+  transform: translateY(0);
+}
+
+.cta--full {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.cta:focus-visible {
+  outline: 3px solid var(--color-amber);
+  outline-offset: 3px;
+}
+
+
+/* ============================================
+   6. HERO SECTION
+   ============================================ */
+.hero {
+  padding: 48px 0 40px;
+  min-height: auto;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero__eyebrow {
+  margin-bottom: 4px;
+}
+
+.hero__headline {
+  font-size: clamp(26px, 8vw, 44px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+.hero__headline--highlight {
+  color: var(--color-primary);
+  position: relative;
+}
+
+.hero__subhead {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.hero__proof-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.hero__cta {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.hero__cta-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Hero visual */
+.hero__visual {
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: visible;
+}
+
+.hero__img {
+  width: 100%;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+  max-height: 280px;
+  box-shadow: var(--shadow-card);
+}
+
+/* Floating badges on hero image */
+.hero__badge-float {
+  position: absolute;
+  background: var(--bg-primary);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.hero__badge-float--time {
+  bottom: -16px;
+  left: 16px;
+}
+
+.hero__badge-float--prompts {
+  top: -12px;
+  right: 16px;
+}
+
+.badge-float__num {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-amber);
+}
+
+.badge-float__unit {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-float__label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+
+/* ============================================
+   7. TESTIMONIAL CAROUSEL
+   ============================================ */
+.testi-carousel__heading {
+  font-size: clamp(20px, 5.5vw, 26px);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.testi-carousel__sub {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.testi-track-wrap {
+  overflow: hidden;
+  border-radius: var(--radius-card);
+}
+
+.testi-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  gap: 0;
+}
+
+.testi-card {
+  flex: 0 0 100%;
+  min-width: 100%;
+  background: var(--bg-primary);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-color);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.testi-card__emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.testi-card__quote {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text-primary);
+  font-style: normal;
+  border-left: 0;
+}
+
+.testi-card__quote strong {
+  color: var(--color-primary);
+}
+
+.testi-card__tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-sage);
+  background: rgba(90, 127, 106, 0.10);
+  border: 1px solid rgba(90, 127, 106, 0.25);
+  border-radius: 100px;
+  padding: 3px 12px;
+}
+
+.testi-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.testi-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  padding: 0;
+  min-height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Visible dot center */
+.testi-dot::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.testi-dot--active::after {
+  background: var(--color-primary);
+}
+
+.testi-dot:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+
+/* ============================================
+   8. PAIN SECTION
+   ============================================ */
+.pain__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.pain__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 16px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.pain__icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.pain__resolution {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.pain__resolution strong {
+  color: var(--color-accent);
+}
+
+
+/* ============================================
+   9. REFRAME SECTION
+   ============================================ */
+.reframe__contrast {
+  background: var(--bg-primary);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+}
+
+.reframe__contrast-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.reframe__negation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.reframe__negation li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  padding-left: 20px;
+  position: relative;
+}
+
+.reframe__negation li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.reframe__negation--stamp {
+  font-weight: 800 !important;
+  color: var(--color-primary) !important;
+  font-size: 17px !important;
+  padding-left: 0 !important;
+}
+
+.reframe__negation--stamp::before {
+  display: none !important;
+}
+
+.reframe__segments-heading {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.reframe__segment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reframe__segment-item {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 14px 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.reframe__segment-item strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 2px;
+}
+
+
+/* ============================================
+   10. PACKAGE INTRO
+   ============================================ */
+.package-intro__body {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+}
+
+
+/* ============================================
+   11. DELIVERABLES
+   ============================================ */
+.deliverables__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.deliverables__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 18px 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.deliverables__icon {
+  font-size: 26px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.deliverables__name {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  letter-spacing: 0;
+}
+
+.deliverables__desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+
+/* ============================================
+   12. BONUS STACK
+   ============================================ */
+.bonus__value {
+  color: var(--color-amber);
+  font-size: 0.9em;
+}
+
+.bonus__sub {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  margin-top: -12px;
+}
+
+.bonus__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.bonus__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 16px;
+}
+
+.bonus__num {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--color-on-primary);
+  background: var(--color-primary);
+  border-radius: 6px;
+  padding: 3px 7px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  letter-spacing: 0.05em;
+}
+
+.bonus__content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.bonus__name {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.bonus__desc {
+  color: var(--text-secondary);
+}
+
+.bonus__price {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-amber);
+  background: var(--color-amber-bg);
+  border: 1px solid var(--color-amber-border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-top: 4px;
+}
+
+.bonus__total {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-on-dark);
+}
+
+.bonus__total p:first-child {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+.bonus__total-num {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-on-primary);
+}
+
+
+/* ============================================
+   13. TRANSFORMATION
+   ============================================ */
+.transformation__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.transformation__narrative {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.transformation__promise {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-primary);
+  font-weight: 500;
+  background: var(--bg-primary);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  padding: 16px 18px;
+}
+
+.transformation__img {
+  border-radius: var(--radius-card);
+  object-fit: cover;
+  max-height: 260px;
+  width: 100%;
+  box-shadow: var(--shadow-card);
+}
+
+.transformation__before-after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.before-after__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 10px 14px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.before-after__label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.before-after__item--before .before-after__val {
+  font-size: 13px;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.before-after__item--after .before-after__val {
+  font-size: 13px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.before-after__arrow {
+  font-size: 20px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+
+/* ============================================
+   14. WHY NOW
+   ============================================ */
+.why-now__bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.why-now__bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 16px;
+}
+
+.why-now__bullet strong {
+  color: var(--text-primary);
+}
+
+.why-now__bullet-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.why-now__last-chance {
+  background: linear-gradient(135deg, rgba(196, 89, 58, 0.08) 0%, rgba(196, 89, 58, 0.04) 100%);
+  border: 1.5px solid rgba(196, 89, 58, 0.30);
+  border-radius: var(--radius-card);
+  padding: 20px;
+}
+
+.why-now__last-chance-heading {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.why-now__last-chance-body {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.why-now__last-chance-body strong {
+  color: var(--text-primary);
+}
+
+
+/* ============================================
+   15. PRICING
+   ============================================ */
+.pricing {
+  padding: var(--section-pad-v) 0;
+}
+
+.pricing .section-heading {
+  margin-bottom: 28px;
+}
+
+.pricing__card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-card);
+  padding: 28px 22px;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 8px 40px rgba(28, 28, 26, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing__badge-top {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-on-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricing__anchor-wrap,
+.pricing__standard-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.pricing__label-anchor,
+.pricing__label-standard,
+.pricing__label-special {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.pricing__anchor,
+.pricing__standard {
+  font-size: 16px;
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.pricing__discount-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: rgba(196, 89, 58, 0.10);
+  border: 1px solid rgba(196, 89, 58, 0.25);
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.pricing__special-wrap {
+  margin: 12px 0 16px;
+}
+
+.pricing__label-special {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.pricing__special-price {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 10vw, 52px);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.pricing__daily {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  background: var(--color-amber-bg);
+  border: 1px solid var(--color-amber-border);
+  border-radius: var(--radius-badge);
+  padding: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.pricing__daily strong {
+  color: var(--color-amber);
+}
+
+.pricing__includes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.pricing__includes li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.pricing__scarcity-warn {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: rgba(196, 89, 58, 0.08);
+  border: 1px solid rgba(196, 89, 58, 0.20);
+  border-radius: var(--radius-badge);
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.pricing__urgency {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.pricing__cta {
+  font-size: 17px;
+}
+
+.pricing__cta-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* ============================================
+   16. FAQ
+   ============================================ */
+.faq {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq__item:last-child {
+  border-bottom: none;
+}
+
+.faq__q {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 36px 18px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  position: relative;
+  line-height: 1.45;
+  display: block;
+}
+
+.faq__q::-webkit-details-marker {
+  display: none;
+}
+
+.faq__q::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: var(--color-primary);
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.faq__item[open] .faq__q::after {
+  content: "−";
+}
+
+.faq__a {
+  padding: 0 0 18px 0;
+}
+
+.faq__a p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+
+/* ============================================
+   17. CONVERSION CTA STRIP (Section 12)
+   ============================================ */
+.form__reminder {
+  font-size: 16px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 0 auto 20px;
+}
+
+.form__reassurance {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.form__reassurance li {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: rgba(26, 127, 110, 0.08);
+  border: 1px solid rgba(26, 127, 110, 0.20);
+  border-radius: 100px;
+  padding: 5px 14px;
+}
+
+.form__cta {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form__cta-sub {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+
+/* ============================================
+   18. FOOTER
+   ============================================ */
+.footer {
+  background: var(--text-primary);
+  padding-top: 0;
+}
+
+/* Live ticker */
+.live-ticker {
+  background: rgba(26, 127, 110, 0.15);
+  border-bottom: 1px solid rgba(26, 127, 110, 0.20);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.live-ticker__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary-bright);
+  flex-shrink: 0;
+  animation: tickerPulse 2s ease-in-out infinite;
+}
+
+@keyframes tickerPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+.live-ticker__text {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  transition: opacity 0.4s ease;
+}
+
+/* Countdown */
+.countdown-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.countdown__label {
+  font-size: 14px;
+  color: rgba(255,255,255,0.70);
+  text-align: center;
+}
+
+.countdown__timer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-width: 58px;
+}
+
+.countdown__num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.countdown__unit-label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 3px;
+}
+
+.countdown__sep {
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.40);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.countdown__cta {
+  font-size: 15px;
+  padding: 12px 28px;
+}
+
+/* Legal */
+.legal {
+  padding: 20px 0;
+}
+
+.legal__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.legal__brand {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+}
+
+.legal__links {
+  display: flex;
+  gap: 16px;
+}
+
+.legal__link {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal__link:hover {
+  color: rgba(255,255,255,0.70);
+}
+
+.legal__recaptcha {
+  font-size: 11px;
+  color: rgba(255,255,255,0.30);
+  max-width: 380px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+/* ============================================
+   19. STICKY MOBILE CTA
+   ============================================ */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+  padding: 10px 16px;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 100;
+  box-shadow: 0 -2px 16px rgba(28, 28, 26, 0.10);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.sticky-cta--visible {
+  transform: translateY(0);
+}
+
+.sticky-cta__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-cta__label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.sticky-cta__price {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.sticky-cta__btn {
+  min-height: 44px;
+  padding: 10px 20px;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+
+/* ============================================
+   20. TABLET — min-width: 768px
+   ============================================ */
+@media (min-width: 768px) {
+
+  :root {
+    --section-pad-v: 80px;
+    --section-pad-h: 32px;
+  }
+
+  body {
+    padding-bottom: 0;
+  }
+
+  .sticky-cta {
+    display: none !important;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 64px 0 56px;
+  }
+
+  .hero__inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .hero__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .hero__visual {
+    flex: 0 0 44%;
+  }
+
+  .hero__img {
+    max-height: 320px;
+  }
+
+  /* Testimonial carousel — show 2 cards */
+  .testi-card {
+    flex: 0 0 50%;
+    min-width: 50%;
+  }
+
+  /* Transformation */
+  .transformation__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .transformation__text {
+    flex: 1;
+  }
+
+  .transformation__visual {
+    flex: 0 0 40%;
+  }
+
+  .transformation__img {
+    max-height: 300px;
+  }
+
+  /* Deliverables 2-col */
+  .deliverables__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  /* Bonus list 2-col */
+  .bonus__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+}
+
+
+/* ============================================
+   21. DESKTOP — min-width: 1024px
+   ============================================ */
+@media (min-width: 1024px) {
+
+  :root {
+    --section-pad-v: 100px;
+    --section-pad-h: 40px;
+    --container-max: 860px;
+  }
+
+  /* Hero headline larger */
+  .hero__headline {
+    font-size: clamp(36px, 3.5vw, 48px);
+  }
+
+  /* Testimonial — 3 cards */
+  .testi-card {
+    flex: 0 0 33.333%;
+    min-width: 33.333%;
+  }
+
+  /* Deliverables — keep 2 col, centered */
+  .deliverables__list {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* Bonus list stays 2-col */
+
+  /* Pricing card wider */
+  .pricing__card {
+    padding: 36px 32px;
+  }
+
+  /* Form reassurance pills bigger */
+  .form__reassurance li {
+    font-size: 15px;
+  }
+
+}
+
+
+/* ============================================
+   22. PRINT / REDUCED-MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========================================
+       SECTION 1: HERO
+       ======================================== -->
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero__inner">
+
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="badge badge--teal">📚 Khusus Guru SD–SMA Indonesia</span>
+          </div>
+
+          <h1 class="hero__headline">
+            RPP, Soal &amp; Laporan Siswa Selesai dalam
+            <span class="hero__headline--highlight">15 Menit</span>
+            — Tanpa Lembur Malam Lagi
+          </h1>
+
+          <p class="hero__subhead">
+            KHUSUS kamu guru aktif yang setiap minggu lembur 2–3 malam buat administrasi —
+            100+ prompt Bahasa Indonesia sudah disesuaikan format Kurikulum Merdeka,
+            tinggal ganti nama mapel dan topik, paste ke ChatGPT gratis, dokumen jadi.
+          </p>
+
+          <div class="hero__proof-bar">
+            <span class="proof-chip">✅ <strong>100+</strong> prompt siap pakai</span>
+            <span class="proof-chip">✅ Cover <strong>SD, SMP &amp; SMA</strong></span>
+            <span class="proof-chip">✅ Kompatibel <strong>ChatGPT / Gemini / Claude</strong></span>
+          </div>
+
+          <a href="#pricing" class="cta cta--primary hero__cta">
+            📦 Akses GuruKit AI Sekarang — Rp 99rb
+          </a>
+          <p class="hero__cta-note">Sekali bayar · Akses selamanya · Download langsung</p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <img
+            src="https://images.pexels.com/photos/37809800/pexels-photo-37809800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="Guru perempuan di meja kerja dengan laptop terbuka, suasana siang hari tenang — menggambarkan kemudahan kerja administratif"
+            class="hero__img"
+            width="560"
+            height="420"
+            loading="eager"
+          >
+          <div class="hero__badge-float hero__badge-float--time">
+            <span class="badge-float__num">15</span>
+            <span class="badge-float__unit">menit</span>
+            <span class="badge-float__label">RPP jadi ✓</span>
+          </div>
+          <div class="hero__badge-float hero__badge-float--prompts">
+            <span class="badge-float__num">100+</span>
+            <span class="badge-float__label">prompt siap pakai</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================
+       SECTION 2: TESTIMONIAL CAROUSEL (PROOF-FIRST)
+       ======================================== -->
+  <section class="testi-carousel" aria-labelledby="testi-h2">
+    <div class="container">
+      <h2 class="testi-carousel__heading" id="testi-h2">
+        Yang Bisa Kamu Rasakan dengan GuruKit AI 🔥
+      </h2>
+      <p class="testi-carousel__sub">Inilah hasil yang dirancang dari setiap prompt — siap kamu buktikan sendiri.</p>
+
+      <div class="testi-track-wrap" role="region" aria-label="Manfaat utama GuruKit AI">
+        <div class="testi-track" id="testiTrack">
+
+          <article class="testi-card">
+            <div class="testi-card__emoji" aria-hidden="true">🔥</div>
+            <blockquote class="testi-card__quote">
+              RPP yang biasanya makan 2 jam bisa kamu selesaikan dalam <strong>±15 menit.</strong>
+            </blockquote>
+            <div class="testi-card__tag">Hemat Waktu</div>
+          </article>
+
+          <article class="testi-card">
+            <div class="testi-card__emoji" aria-hidden="true">✅</div>
+            <blockquote class="testi-card__quote">
+              Semua prompt disusun untuk <strong>format Kurikulum Merdeka</strong> — minim edit ulang.
+            </blockquote>
+            <div class="testi-card__tag">Sesuai Kurikulum</div>
+          </article>
+
+          <article class="testi-card">
+            <div class="testi-card__emoji" aria-hidden="true">📊</div>
+            <blockquote class="testi-card__quote">
+              Laporan capaian siswa bisa kamu rapikan <strong>dalam satu sesi.</strong>
+            </blockquote>
+            <div class="testi-card__tag">Laporan Lebih Cepat</div>
+          </article>
+
+          <article class="testi-card">
+            <div class="testi-card__emoji" aria-hidden="true">📚</div>
+            <blockquote class="testi-card__quote">
+              Belum pernah pakai AI? Panduan Mulai Cepat memandu <strong>dari nol</strong>, tanpa jargon.
+            </blockquote>
+            <div class="testi-card__tag">Ramah Pemula</div>
+          </article>
+
+          <article class="testi-card">
+            <div class="testi-card__emoji" aria-hidden="true">😊</div>
+            <blockquote class="testi-card__quote">
+              Soal HOTS per KD bisa kamu hasilkan <strong>dalam hitungan menit.</strong>
+            </blockquote>
+            <div class="testi-card__tag">Bank Soal Lengkap</div>
+          </article>
+
+          <article class="testi-card">
+            <div class="testi-card__emoji" aria-hidden="true">🎯</div>
+            <blockquote class="testi-card__quote">
+              Beban administrasi berkurang, <strong>waktu mengajar &amp; istirahat</strong> bertambah.
+            </blockquote>
+            <div class="testi-card__tag">Hidup Lebih Seimbang</div>
+          </article>
+
+        </div><!-- /.testi-track -->
+      </div><!-- /.testi-track-wrap -->
+
+      <div class="testi-dots" id="testiDots" aria-label="Navigasi manfaat" role="tablist">
+        <button class="testi-dot testi-dot--active" role="tab" aria-selected="true" data-idx="0" aria-label="Manfaat 1"></button>
+        <button class="testi-dot" role="tab" aria-selected="false" data-idx="1" aria-label="Manfaat 2"></button>
+        <button class="testi-dot" role="tab" aria-selected="false" data-idx="2" aria-label="Manfaat 3"></button>
+        <button class="testi-dot" role="tab" aria-selected="false" data-idx="3" aria-label="Manfaat 4"></button>
+        <button class="testi-dot" role="tab" aria-selected="false" data-idx="4" aria-label="Manfaat 5"></button>
+        <button class="testi-dot" role="tab" aria-selected="false" data-idx="5" aria-label="Manfaat 6"></button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 3: PAIN VALIDATION
+       ======================================== -->
+  <section class="pain" aria-labelledby="pain-h2">
+    <div class="container">
+      <h2 class="section-heading" id="pain-h2">
+        Coba jujur, kamu pernah kan kepikiran ini? 💡
+      </h2>
+
+      <ul class="pain__list" role="list">
+        <li class="pain__item">
+          <span class="pain__icon" aria-hidden="true">😔</span>
+          <span>Besok ada kelas, tapi soal belum jadi dan RPP masih kosong — malam ini lembur lagi...</span>
+        </li>
+        <li class="pain__item">
+          <span class="pain__icon" aria-hidden="true">😩</span>
+          <span>Pernah coba prompt ChatGPT sendiri, tapi hasilnya terlalu umum dan tidak sesuai format sekolah...</span>
+        </li>
+        <li class="pain__item">
+          <span class="pain__icon" aria-hidden="true">😰</span>
+          <span>Takut pakai AI karena tidak tahu harus mulai dari mana — tidak ada yang mengajari dengan bahasa yang mudah...</span>
+        </li>
+        <li class="pain__item">
+          <span class="pain__icon" aria-hidden="true">😤</span>
+          <span>Ganti kurikulum lagi, dokumen lama tidak bisa dipakai — harus bikin semua dari nol di tengah jadwal mengajar yang padat...</span>
+        </li>
+      </ul>
+
+      <p class="pain__resolution">
+        Kalau begitu, ini <strong>SOLUSI</strong> yang kamu cari! 🔥
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 4: OPPORTUNITY REFRAME
+       ======================================== -->
+  <section class="reframe" aria-labelledby="reframe-h2">
+    <div class="container">
+      <h2 class="section-heading" id="reframe-h2">
+        Kenapa Ini Bisa Jadi Titik Balik dari Lembur ke Pulang Tepat Waktu? 💡
+      </h2>
+
+      <div class="reframe__contrast">
+        <p class="reframe__contrast-text">
+          Dulu, guru harus buka laptop malam hari, nulis RPP dari nol selama 2–3 jam,
+          lalu googling prompt ChatGPT yang hasilnya tidak cocok format Kurikulum Merdeka,
+          dan harus diedit ulang hampir semuanya.
+          Sekarang? Kamu cukup pilih prompt yang sudah dikonfigurasi benar,
+          ganti variabel dalam kurung, paste ke ChatGPT gratis —
+          dokumen selesai dalam 15 menit.
+        </p>
+      </div>
+
+      <ul class="reframe__negation" role="list">
+        <li>Tanpa perlu belajar prompt engineering dulu</li>
+        <li>Tanpa langganan platform SaaS yang mahal setiap bulan</li>
+        <li>Tanpa buang waktu revisi output AI yang tidak sesuai kurikulum</li>
+        <li class="reframe__negation--stamp">SEMUA SUDAH KAMI SIAPKAN ✅</li>
+      </ul>
+
+      <div class="reframe__segments">
+        <h3 class="reframe__segments-heading">Ini kesempatan terbaik untuk kamu:</h3>
+        <ul class="reframe__segment-list" role="list">
+          <li class="reframe__segment-item">
+            <strong>Guru SD:</strong> Yang ingin buat Modul Ajar dan soal HOTS tanpa harus lembur sampai larut malam setiap minggunya.
+          </li>
+          <li class="reframe__segment-item">
+            <strong>Guru SMP &amp; SMA:</strong> Yang butuh bank soal PG + essay per KD dalam hitungan menit, bukan jam.
+          </li>
+          <li class="reframe__segment-item">
+            <strong>Guru yang belum pernah pakai AI:</strong> Yang ingin mulai pakai teknologi tapi tidak tahu dari mana — dan tidak mau merasa bodoh karena belum tahu.
+          </li>
+          <li class="reframe__segment-item">
+            <strong>Siapa saja:</strong> Guru aktif yang ingin waktu administrasi berkurang drastis agar bisa fokus mengajar — atau sekadar bisa istirahat dengan tenang.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 5: PACKAGE INTRO
+       ======================================== -->
+  <section class="package-intro" aria-labelledby="package-h2">
+    <div class="container">
+      <h2 class="section-heading section-heading--center" id="package-h2">
+        Apa aja yang bakal kamu dapatkan? 📦
+      </h2>
+      <p class="package-intro__body">
+        Kamu tidak perlu buang waktu riset cara prompt yang benar dari nol.
+        Kami sudah menyusun bundle lengkap — 100+ prompt terstruktur dalam Bahasa Indonesia,
+        sudah dikonfigurasi ke format Kurikulum Merdeka, siap pakai hari ini.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 6: CORE DELIVERABLES
+       ======================================== -->
+  <section class="deliverables" aria-labelledby="deliverables-h2">
+    <div class="container">
+      <h2 class="sr-only" id="deliverables-h2">Isi Bundle GuruKit AI</h2>
+
+      <ul class="deliverables__list" role="list">
+
+        <li class="deliverables__item">
+          <div class="deliverables__icon" aria-hidden="true">📄</div>
+          <div class="deliverables__content">
+            <h3 class="deliverables__name">PROMPT RPP &amp; MODUL AJAR</h3>
+            <p class="deliverables__desc">Prompt terstruktur untuk buat RPP dan Modul Ajar format Kurikulum Merdeka — input nama mapel, kelas, topik, output dokumen lengkap siap pakai. 🎯</p>
+          </div>
+        </li>
+
+        <li class="deliverables__item">
+          <div class="deliverables__icon" aria-hidden="true">📝</div>
+          <div class="deliverables__content">
+            <h3 class="deliverables__name">PROMPT BANK SOAL PG + ESSAY + HOTS</h3>
+            <p class="deliverables__desc">Prompt per KD untuk buat soal pilihan ganda, essay, dan HOTS — pilih level kognitif, soal langsung muncul dalam 2 menit. 🚀</p>
+          </div>
+        </li>
+
+        <li class="deliverables__item">
+          <div class="deliverables__icon" aria-hidden="true">📖</div>
+          <div class="deliverables__content">
+            <h3 class="deliverables__name">PROMPT RINGKASAN MATERI AJAR</h3>
+            <p class="deliverables__desc">Dari KD dan topik yang sama, hasilkan ringkasan materi yang bisa langsung dibagikan ke siswa — disesuaikan jenjang dan gaya bahasa kelas. 💡</p>
+          </div>
+        </li>
+
+        <li class="deliverables__item">
+          <div class="deliverables__icon" aria-hidden="true">📋</div>
+          <div class="deliverables__content">
+            <h3 class="deliverables__name">PROMPT LAPORAN CAPAIAN SISWA</h3>
+            <p class="deliverables__desc">Buat laporan capaian dan perkembangan siswa tanpa ngetik satu per satu — prompt sudah handle format narasi yang dibutuhkan administrasi sekolah. ✅</p>
+          </div>
+        </li>
+
+        <li class="deliverables__item">
+          <div class="deliverables__icon" aria-hidden="true">🎨</div>
+          <div class="deliverables__content">
+            <h3 class="deliverables__name">PROMPT MEDIA PEMBELAJARAN INTERAKTIF</h3>
+            <p class="deliverables__desc">Dari skenario kuis, ice breaker, sampai ide PPT yang menarik — prompt yang bantu kamu buat media pembelajaran tanpa mati gaya. 🔥</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 7: BONUS STACK
+       ======================================== -->
+  <section class="bonus" aria-labelledby="bonus-h2">
+    <div class="container">
+      <h2 class="section-heading section-heading--center" id="bonus-h2">
+        BONUS EKSKLUSIF <span class="bonus__value">(GRATIS dalam paket)</span> 🎁
+      </h2>
+      <p class="bonus__sub">Semua bonus ini kamu dapat tanpa biaya tambahan — sudah termasuk dalam Rp 99rb.</p>
+
+      <ul class="bonus__list" role="list">
+
+        <li class="bonus__item">
+          <span class="bonus__num" aria-hidden="true">01</span>
+          <div class="bonus__content">
+            <strong class="bonus__name">Panduan Mulai Cepat (1 Halaman)</strong>
+            <span class="bonus__desc"> — Step-by-step dari buka ChatGPT sampai dokumen pertama jadi dalam 10 menit, tanpa jargon teknis.</span>
+            <span class="bonus__price">GRATIS</span>
+          </div>
+        </li>
+
+        <li class="bonus__item">
+          <span class="bonus__num" aria-hidden="true">02</span>
+          <div class="bonus__content">
+            <strong class="bonus__name">Template Dokumen Word &amp; Google Docs</strong>
+            <span class="bonus__desc"> — Format siap isi untuk setiap jenis dokumen guru, tinggal copy output AI dan paste, format sudah rapi.</span>
+            <span class="bonus__price">GRATIS</span>
+          </div>
+        </li>
+
+        <li class="bonus__item">
+          <span class="bonus__num" aria-hidden="true">03</span>
+          <div class="bonus__content">
+            <strong class="bonus__name">Panduan Review Output AI (Instruksi 3-Poin)</strong>
+            <span class="bonus__desc"> — Checklist singkat apa yang perlu dicek sebelum dokumen dipakai di kelas — kamu tetap pegang kendali akhir.</span>
+            <span class="bonus__price">GRATIS</span>
+          </div>
+        </li>
+
+        <li class="bonus__item">
+          <span class="bonus__num" aria-hidden="true">04</span>
+          <div class="bonus__content">
+            <strong class="bonus__name">Prompt Tambahan: Ide Ice Breaker &amp; Kuis Kelas</strong>
+            <span class="bonus__desc"> — 20+ prompt untuk buat suasana kelas lebih hidup — dari kuis cepat sampai aktivitas pembuka yang relevan dengan materi.</span>
+            <span class="bonus__price">GRATIS</span>
+          </div>
+        </li>
+
+        <li class="bonus__item">
+          <span class="bonus__num" aria-hidden="true">05</span>
+          <div class="bonus__content">
+            <strong class="bonus__name">Tip Prompt Lanjutan: Cara Refine Output AI</strong>
+            <span class="bonus__desc"> — Kalau output pertama kurang pas, 1 halaman tips cara tambahkan instruksi dengan satu baris — hasilnya langsung lebih akurat.</span>
+            <span class="bonus__price">GRATIS</span>
+          </div>
+        </li>
+
+        <li class="bonus__item">
+          <span class="bonus__num" aria-hidden="true">06</span>
+          <div class="bonus__content">
+            <strong class="bonus__name">Daftar AI Gratis yang Bisa Dipakai</strong>
+            <span class="bonus__desc"> — Panduan singkat ChatGPT / Gemini / Claude versi gratis, mana yang terbaik untuk jenis dokumen tertentu.</span>
+            <span class="bonus__price">GRATIS</span>
+          </div>
+        </li>
+
+        <li class="bonus__item">
+          <span class="bonus__num" aria-hidden="true">07</span>
+          <div class="bonus__content">
+            <strong class="bonus__name">Update Bundle Gratis Selamanya</strong>
+            <span class="bonus__desc"> — Setiap kali GuruKit AI menambah prompt baru atau update format Kurikulum Merdeka, kamu dapat akses update tanpa biaya tambahan.</span>
+            <span class="bonus__price">GRATIS</span>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="bonus__total">
+        <p>Semua prompt, template, panduan, dan 7 bonus di atas — sudah termasuk dalam satu paket:</p>
+        <p class="bonus__total-num">Harga normal Rp 799.000 → hari ini Rp 99.000</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 8: TRANSFORMATION / BAYANGIN
+       ======================================== -->
+  <section class="transformation" aria-labelledby="transformation-h2">
+    <div class="container">
+      <div class="transformation__inner">
+
+        <div class="transformation__text">
+          <h2 class="section-heading" id="transformation-h2">
+            Bayangin Ini deh...
+          </h2>
+
+          <p class="transformation__narrative">
+            Meja kerja yang biasanya penuh coretan dan laptop menyala sampai jam 11 malam,
+            sekarang rapi ditutup sebelum Maghrib.
+            Pagi hari kamu datang ke kelas dengan RPP yang sudah matang —
+            bukan yang kamu ketik terburu-buru tadi malam.
+            Siang, soal ulangan untuk minggu depan sudah selesai —
+            kamu buat dalam 15 menit di ruang guru saat jam istirahat.
+            Sore, laporan capaian 3 siswa yang seharusnya makan 1 jam —
+            beres dalam 20 menit, dan kamu masih bisa jemput anak tepat waktu.
+            Besoknya? Kamu masuk kelas dengan energi penuh —
+            bukan dengan muka lelah karena lembur sampai subuh.
+            Semua ini dilakukan dengan ChatGPT yang sudah kamu punya gratis,
+            tanpa perlu belajar prompt engineering,
+            tanpa ribet setup software baru,
+            tanpa biaya langganan bulanan.
+          </p>
+
+          <p class="transformation__promise">
+            🚀 Ini bukan sekadar kumpulan prompt. Ini adalah <strong>Sistem Administrasi Guru</strong>
+            yang dirancang untuk membantu guru Indonesia pulang tepat waktu —
+            dan punya waktu lebih untuk mengajar dengan lebih baik.
+            Dan sekarang... 💚 Giliran kamu mulai mengajar tanpa beban administrasi yang menumpuk!
+          </p>
+        </div>
+
+        <div class="transformation__visual" aria-hidden="true">
+          <img
+            src="https://images.pexels.com/photos/37826257/pexels-photo-37826257.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="Guru perempuan tersenyum lega di meja kerja dengan laptop tertutup, suasana sore hari — menggambarkan selesainya pekerjaan administrasi lebih awal"
+            class="transformation__img"
+            width="480"
+            height="360"
+            loading="lazy"
+          >
+          <div class="transformation__before-after">
+            <div class="before-after__item before-after__item--before">
+              <span class="before-after__label">Sebelum</span>
+              <span class="before-after__val">Lembur sampai jam 11</span>
+            </div>
+            <div class="before-after__arrow" aria-hidden="true">→</div>
+            <div class="before-after__item before-after__item--after">
+              <span class="before-after__label">Sesudah</span>
+              <span class="before-after__val">Selesai sebelum Maghrib</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 9: WHY NOW / SCARCITY
+       ======================================== -->
+  <section class="why-now" aria-labelledby="why-h2">
+    <div class="container">
+      <h2 class="section-heading section-heading--center" id="why-h2">
+        Kenapa Harus Ambil GuruKit AI Sekarang?
+      </h2>
+
+      <ul class="why-now__bullets" role="list">
+        <li class="why-now__bullet">
+          <span class="why-now__bullet-icon" aria-hidden="true">✅</span>
+          <div>
+            <strong>Bukan prompt generic dari internet!</strong> —
+            Ini adalah 100+ prompt yang sudah dikonfigurasi khusus format Kurikulum Merdeka Indonesia — bukan template asing yang hasilnya harus diedit ulang dari awal.
+          </div>
+        </li>
+        <li class="why-now__bullet">
+          <span class="why-now__bullet-icon" aria-hidden="true">✅</span>
+          <div>
+            <strong>Bukan kursus AI mahal Rp 200–500rb!</strong> —
+            Cuma Rp 99rb sekali bayar, langsung bisa praktik hari ini — tanpa teori, langsung dokumen jadi.
+          </div>
+        </li>
+        <li class="why-now__bullet">
+          <span class="why-now__bullet-icon" aria-hidden="true">✅</span>
+          <div>
+            <strong>Dukungan penuh untuk pemula!</strong> —
+            Panduan Mulai Cepat 1 halaman memandu kamu dari nol sampai dokumen pertama jadi — bahkan kalau belum pernah buka ChatGPT sekalipun.
+          </div>
+        </li>
+      </ul>
+
+      <div class="why-now__last-chance">
+        <h3 class="why-now__last-chance-heading">⏳ Kenapa Mulai Sekarang?</h3>
+        <p class="why-now__last-chance-body">
+          Setiap minggu yang kamu habiskan untuk lembur administrasi adalah waktu
+          yang tidak bisa kamu ambil kembali. GuruKit AI sekarang tersedia di
+          <strong>harga perkenalan Rp 99.000</strong> — sekali bayar, langsung bisa dipakai.
+          Tidak ada alasan menunda: dokumen yang biasanya makan berjam-jam bisa
+          kamu selesaikan mulai malam ini juga.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 10: PRICING
+       ======================================== -->
+  <section class="pricing" id="pricing" aria-labelledby="pricing-h2">
+    <div class="container">
+      <h2 class="section-heading section-heading--center section-heading--light" id="pricing-h2">
+        Investasi yang Langsung Balik Modal di Malam Pertama
+      </h2>
+
+      <div class="pricing__card">
+
+        <div class="pricing__badge-top">Harga Perkenalan</div>
+
+        <div class="pricing__standard-wrap">
+          <span class="pricing__label-standard">Harga normal:</span>
+          <span class="pricing__standard"><s>Rp 799.000</s></span>
+          <span class="pricing__discount-badge">Hemat 88%</span>
+        </div>
+
+        <div class="pricing__special-wrap">
+          <span class="pricing__label-special">Harga hari ini:</span>
+          <div class="pricing__special-price">Rp 99.000</div>
+        </div>
+
+        <p class="pricing__daily">
+          Cuma setara <strong>Rp 3.300-an sehari</strong> kalau dibagi sebulan.
+          Bahkan lebih murah dari 1 gelas es teh manis di kantin sekolah.
+        </p>
+
+        <ul class="pricing__includes" role="list">
+          <li>✅ AKSES SELAMANYA — tidak ada biaya bulanan</li>
+          <li>✅ SEMUA 100+ PROMPT langsung bisa didownload</li>
+          <li>✅ BONUS Panduan Mulai Cepat + Template Dokumen</li>
+          <li>✅ UPDATE GRATIS saat GuruKit AI menambah prompt baru</li>
+        </ul>
+
+        <p class="pricing__scarcity-warn">
+          ⚠️ Rp 99.000 adalah harga perkenalan dan bisa naik sewaktu-waktu.
+        </p>
+
+        <p class="pricing__urgency">
+          Setiap malam lembur yang bisa kamu hindari = energi lebih untuk mengajar keesokan harinya.
+          Semakin lama kamu menunda, semakin banyak malam yang terbuang untuk administrasi
+          yang sebenarnya bisa selesai dalam 15 menit.
+        </p>
+
+        <a href="#form" class="cta cta--primary cta--full pricing__cta">
+          Ambil Promonya Sebelum Kehabisan
+        </a>
+        <p class="pricing__cta-note">Download langsung setelah checkout · Bisa dipakai malam ini</p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 11: FAQ
+       ======================================== -->
+  <section class="faq-wrap" aria-labelledby="faq-h2">
+    <div class="container">
+      <h2 class="section-heading section-heading--center" id="faq-h2">
+        Yang Sering Ditanyain 😊
+      </h2>
+
+      <div class="faq">
+
+        <details class="faq__item">
+          <summary class="faq__q">Ini produknya dalam bentuk apa?</summary>
+          <div class="faq__a">
+            <p>Produk digital — setelah checkout kamu langsung dapat link download ke PDF Prompt Pack, Template Dokumen Word/Google Docs, dan Panduan Mulai Cepat. Tidak perlu nunggu paket, bisa langsung dipakai malam ini! 😊</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Saya belum pernah pakai ChatGPT sama sekali. Apakah bisa?</summary>
+          <div class="faq__a">
+            <p>Bisa banget! Justru GuruKit AI dirancang untuk guru yang mulai dari NOL. Ada Panduan Mulai Cepat 1 halaman yang memandu kamu dari cara buka ChatGPT sampai dokumen pertama jadi — dalam 10 menit, tanpa jargon teknis sama sekali. 🤝</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Aksesnya selamanya atau ada batas waktu?</summary>
+          <div class="faq__a">
+            <p>SELAMANYA! Sekali beli, kamu download file-nya dan simpan di perangkatmu — tidak ada akses yang bisa diblokir atau kedaluwarsa. Kalau ada update prompt baru, kamu juga dapat GRATIS. Tidak ada biaya bulanan sama sekali. 😊</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Gimana cara dapet aksesnya setelah beli?</summary>
+          <div class="faq__a">
+            <p>Gampang! Setelah selesai checkout, cek email kamu — link download semua file dikirim dalam hitungan menit. Cek folder spam juga ya kalau tidak langsung muncul di inbox. Download, buka, langsung bisa dipakai! 👍</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Apakah prompt ini sesuai semua mata pelajaran dan jenjang?</summary>
+          <div class="faq__a">
+            <p>Ya! Setiap prompt menggunakan variabel [nama mapel], [kelas], dan [topik] yang bisa kamu isi sesuai mata pelajaran apa pun. Bundle ini cover SD, SMP, dan SMA — dari Matematika, Bahasa Indonesia, IPA, IPS, sampai mata pelajaran kejuruan. 🎯</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Kalau output AI tidak sesuai yang saya harapkan, bagaimana?</summary>
+          <div class="faq__a">
+            <p>Setiap prompt di GuruKit AI dilengkapi instruksi review 3-poin — apa yang perlu dicek sebelum dokumen dipakai di kelas. Ada juga tips cara refine output dengan satu baris tambahan kalau hasil pertama kurang pas. Kamu tetap pegang kendali penuh atas dokumennya — AI bantu draft, kamu yang putuskan! 🤝</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 12: CONVERSION CTA STRIP
+       (NO <form>, NO payment badges — Scalev injects checkout)
+       ======================================== -->
+  <section class="form" id="form" aria-labelledby="form-h2">
+    <div class="container">
+      <h2 class="section-heading section-heading--center" id="form-h2">
+        Siap Mengajar Tanpa Beban Administrasi? 🚀
+      </h2>
+
+      <p class="form__reminder">
+        Kamu sudah baca sampai sini — artinya kamu serius ingin mengubah cara kerja.
+        GuruKit AI = dokumen administrasi selesai dalam 15 menit, mulai malam ini.
+      </p>
+
+      <ul class="form__reassurance" role="list">
+        <li>✓ Sekali bayar</li>
+        <li>✓ Akses selamanya</li>
+        <li>✓ Download langsung</li>
+        <li>✓ Tidak perlu pengalaman AI</li>
+      </ul>
+
+      <a href="#pricing" class="cta cta--primary cta--full form__cta">
+        Ambil Promonya Sebelum Kehabisan
+      </a>
+      <p class="form__cta-sub">Akses dikirim ke email setelah checkout · Bisa dipakai malam ini</p>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 14: FOOTER
+       ======================================== -->
+  <footer class="footer">
+
+    <!-- Closing CTA banner -->
+    <div class="countdown-wrap" aria-label="Ajakan terakhir">
+      <p class="countdown__label">📦 Akses GuruKit AI — harga perkenalan Rp 99.000</p>
+      <a href="#pricing" class="cta cta--primary countdown__cta">Ambil Sekarang</a>
+    </div>
+
+    <!-- Legal + brand -->
+    <div class="legal">
+      <div class="container">
+        <div class="legal__inner">
+          <p class="legal__brand">© 2025 GuruKit AI. Semua hak dilindungi.</p>
+          <nav class="legal__links" aria-label="Link hukum">
+            <a href="/privasi" class="legal__link">Kebijakan Privasi</a>
+            <a href="/syarat" class="legal__link">Syarat &amp; Ketentuan</a>
+          </nav>
+          <p class="legal__recaptcha">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy" class="legal__link" rel="noopener noreferrer">Privacy Policy</a>
+            and
+            <a href="https://policies.google.com/terms" class="legal__link" rel="noopener noreferrer">Terms of Service</a>
+            apply.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" id="stickyCta" role="region" aria-label="Beli cepat">
+    <div class="sticky-cta__info">
+      <span class="sticky-cta__label">GuruKit AI</span>
+      <span class="sticky-cta__price">Rp 99.000</span>
+    </div>
+    <a href="#pricing" class="cta cta--primary sticky-cta__btn">Beli Sekarang</a>
+  </div>
+
+
+  <script>
+
+    /* ============================================
+       TESTIMONIAL CAROUSEL
+       ============================================ */
+    (function() {
+      var track = document.getElementById('testiTrack');
+      var dots  = document.querySelectorAll('.testi-dot');
+      var cards = document.querySelectorAll('.testi-card');
+      var current = 0;
+      var autoInterval;
+
+      function goTo(idx) {
+        current = idx;
+        // On mobile we show 1 card, on desktop 3
+        var isMobile = window.innerWidth < 768;
+        var offset = isMobile ? idx * 100 : Math.min(idx, cards.length - 3) * (100 / 3);
+        track.style.transform = 'translateX(-' + (isMobile ? idx * (100 / cards.length) * cards.length : 0) + '%)';
+
+        // Simple: scroll individual cards into view approach
+        if (isMobile) {
+          var cardWidth = track.parentElement.offsetWidth;
+          track.style.transform = 'translateX(-' + (idx * cardWidth) + 'px)';
+        } else {
+          // show 3 at a time
+          var visStart = Math.min(idx, cards.length - 3);
+          var cw = track.parentElement.offsetWidth / 3;
+          track.style.transform = 'translateX(-' + (visStart * cw) + 'px)';
+        }
+
+        dots.forEach(function(d, i) {
+          d.classList.toggle('testi-dot--active', i === idx);
+          d.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+        });
+      }
+
+      dots.forEach(function(dot, i) {
+        dot.addEventListener('click', function() {
+          clearInterval(autoInterval);
+          goTo(i);
+          startAuto();
+        });
+      });
+
+      function startAuto() {
+        autoInterval = setInterval(function() {
+          var next = (current + 1) % cards.length;
+          goTo(next);
+        }, 4000);
+      }
+
+      // Touch/swipe
+      var startX = 0;
+      track.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+        clearInterval(autoInterval);
+      }, { passive: true });
+      track.addEventListener('touchend', function(e) {
+        var diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) {
+          var next = diff > 0
+            ? Math.min(current + 1, cards.length - 1)
+            : Math.max(current - 1, 0);
+          goTo(next);
+        }
+        startAuto();
+      }, { passive: true });
+
+      goTo(0);
+      startAuto();
+    })();
+
+
+    /* ============================================
+       STICKY CTA — appear after hero
+       ============================================ */
+    (function() {
+      var sticky = document.getElementById('stickyCta');
+      if (!sticky) return;
+      window.addEventListener('scroll', function() {
+        sticky.classList.toggle('sticky-cta--visible', window.scrollY > 600);
+      }, { passive: true });
+    })();
+
+  </script>
+
+</body>
+</html>
